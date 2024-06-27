@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'JetBrains Mono', monospace;
     background-color: #18171F;
     color: #ffffff;
     display: flex;
@@ -38,7 +38,7 @@ body {
     background-color: #24232C;
     padding: 10px;
     border-radius: 0px;
-    width: 420px;
+    width: 420px; 
 }
 
 .password-display input {
@@ -58,7 +58,7 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 1.2em; /* Adjust as needed for the icon size */
+    font-size: 1.2em; 
     color: #ffffff;
 }
 
@@ -71,7 +71,7 @@ body {
 
 .separator {
     width: 100%;
-    height: 20px; /* Adjust as needed */
+    height: 20px; 
     background-color: #18171F;
 }
 
@@ -118,7 +118,7 @@ body {
     background: #A4FFAF;
     cursor: pointer;
     border-radius: 50%;
-    margin-top: -5px; /* Center the thumb */
+    margin-top: -5px; 
 }
 
 .controls input[type="range"]::-moz-range-thumb {
@@ -230,10 +230,10 @@ body {
     width: 100%;
     padding: 10px;
     background-color: transparent;
-    border: 2px solid #A4FFAF;
+    background-color: #A4FFAF;
     border-radius: 0px;
     cursor: pointer;
-    color: #A4FFAF;
+    color: #18171F;
     font-size: 1em;
     transition: background-color 0.3s, color 0.3s;
     display: flex;
@@ -241,21 +241,12 @@ body {
     align-items: center;
     gap: 5px;
 }
-
-#generate-btn .arrow {
-    transition: color 0.3s;
-}
-
 #generate-btn:hover {
-    background-color: #A4FFAF;
-    color: #242424;
+    
+    background-color: #18171F;
+    border: 2px solid #A4FFAF;
+    color: #A4FFAF;
 }
-
-#generate-btn:hover .arrow {
-    color: #242424;
-}
-
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
     .password-display, .controls, .strength-container {
         width: 100%;
@@ -287,10 +278,10 @@ body {
         height: auto;
     }
     .password-display {
-        width: 100%;
+        width: 390px; 
     }
     .password-display input {
-        font-size: 0.9em;
+        font-size: 1.2em; 
     }
     .checkbox-container {
         padding-left: 15px;
@@ -299,3 +290,4 @@ body {
         font-size: 0.7em;
     }
 }
+ 
